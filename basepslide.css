@@ -6,36 +6,47 @@
   --blur-intensity: 1;
 }
 
-/* Slide-style container */
+/* === Slide panel base logic === */
 .slide-panel {
   left: calc((var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)));
+  margin-left: calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)));
   transition:
     var(--hide-speed, 0.5s) transform ease-out,
     var(--hide-speed, 0.5s) backdrop-filter ease-out;
-  margin-left: calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)));
   position: relative;
   z-index: 2;
-  background: var(--background, #111);
+  background: var(--background, #111); /* Optional fallback background */
 }
 
-/* Active state */
+/* === Hover/focus trigger === */
 .slide-panel:hover,
 .slide-panel:focus-within {
-  transform: translateX(calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled))));
-  backdrop-filter: blur(calc(var(--blur-intensity, 1) * var(--hide-var, var(--hide-fallback-enabled)) * 3px));
+  transform: translateX(
+    calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)))
+  );
+  backdrop-filter: blur(
+    calc(var(--blur-intensity, 1) * var(--hide-var, var(--hide-fallback-enabled)) * 3px)
+  );
 }
+
+/* === Example for Discord right panel === */
 .sidebar_e031be {
   width: 0px !important;
   min-width: 0 !important;
-  opacity: 0;
-  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0 !important;
+  pointer-events: none !important;
   overflow: hidden !important;
-  pointer-events: none;
+  transition: width var(--hide-speed) ease, opacity var(--hide-speed) ease !important;
 }
 
 .container_bd15da:hover .sidebar_e031be {
   width: 350px !important;
   min-width: 240px !important;
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* (Optional) Dev debug */
+.sidebar_e031be {
+  /* outline: 2px solid red; */
 }
