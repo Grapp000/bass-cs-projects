@@ -6,7 +6,7 @@
   --blur-intensity: 1;
 }
 
-/* Slide style for content panels */
+/* Slide-style container */
 .slide-panel {
   left: calc((var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)));
   transition:
@@ -15,12 +15,27 @@
   margin-left: calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)));
   position: relative;
   z-index: 2;
-  background: var(--background, #111); /* optional */
+  background: var(--background, #111);
 }
 
-/* Trigger slide effect on hover */
+/* Active state */
 .slide-panel:hover,
 .slide-panel:focus-within {
   transform: translateX(calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled))));
   backdrop-filter: blur(calc(var(--blur-intensity, 1) * var(--hide-var, var(--hide-fallback-enabled)) * 3px));
+}
+.sidebar_e031be {
+  width: 0px !important;
+  min-width: 0 !important;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  overflow: hidden !important;
+  pointer-events: none;
+}
+
+.container_bd15da:hover .sidebar_e031be {
+  width: 350px !important;
+  min-width: 240px !important;
+  opacity: 1;
+  pointer-events: auto;
 }
