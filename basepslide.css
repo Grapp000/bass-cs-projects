@@ -4048,12 +4048,6 @@ html {
   -webkit-backdrop-filter: blur(calc(var(--blur-intensity, 1) * 5px));
   backdrop-filter: blur(calc(var(--blur-intensity, 1) * 5px));
 }
-.accountProfilePopoutWrapper__37e49 .menu_c1e9c4:not(.submenu_c1e9c4) {
-  background: rgba(0, 0, 0, 0);
-}
-.accountProfilePopoutWrapper__37e49 .menu_c1e9c4:not(.submenu_c1e9c4):before {
-  content: none;
-}
 .submenuPaddingContainer_c1e9c4 {
   padding: 0;
   position: relative;
