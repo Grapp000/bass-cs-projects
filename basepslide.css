@@ -824,3 +824,180 @@ html {
   border-bottom-left-radius: 0;
   background: var(--hsl-side-shading);
 }
+.container__664ff::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--hsl-header-shading);
+  height: 48px;
+}
+.container__05cdc {
+  display: none;
+}
+.buttonContainer__664ff,
+.buttonContainer__664ff:hover,
+.buttonContainer__664ff:active,
+.colorable_f1ceac.white_f1ceac,
+.colorable_f1ceac.white_f1ceac:hover,
+.colorable_f1ceac.white_f1ceac.active_f1ceac {
+  background: var(--hsl-primary-color);
+}
+.colorable_f1ceac.primaryDark_f1ceac,
+.colorable_f1ceac.primaryDark_f1ceac:hover,
+.colorable_f1ceac.primaryDark_f1ceac:active {
+  background: var(--hsl-card-background);
+}
+.colorable_f1ceac.red_f1ceac,
+.colorable_f1ceac.red_f1ceac:hover,
+.colorable_f1ceac.red_f1ceac:active {
+  background: var(--hsl-red-color);
+}
+.colorable_f1ceac.green_f1ceac,
+.colorable_f1ceac.green_f1ceac:hover,
+.colorable_f1ceac.green_f1ceac:active {
+  background: var(--hsl-green-color);
+}
+.audienceIconContainer__55bab {
+  background: var(--hsl-primary-color);
+  color: var(--header-primary);
+}
+.container__722ff,
+.callContainer__722ff,
+.avatar__71eb2,
+.rowContainer__8a920,
+.participants__9c309 {
+  background: rgba(0, 0, 0, 0);
+}
+:is(.chat_f75fb0, .wrapper_d852db, .wrapper_fc8177) {
+  background: rgba(0, 0, 0, 0);
+}
+.chat_f75fb0[data-has-border="true"] {
+  border: none;
+}
+.content_f75fb0::before {
+  content: none;
+}
+.content_f75fb0 .loader_f75fb0 {
+  background: var(--hsl-middle-shading);
+}
+.noChat_f75fb0.content_f75fb0 {
+  background: var(--hsl-middle-shading);
+}
+.scroller__28a87,
+.chatContent_f75fb0 {
+  background: var(--hsl-middle-shading);
+}
+.noChannel__01d5c::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--hsl-header-shading);
+  height: 48px;
+}
+.noChannel__01d5c::after {
+  content: "";
+  top: 48px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--hsl-middle-shading);
+  height: calc(100vh - 48px);
+}
+.ephemeralMessage__124d2 {
+  color: var(--text-default);
+}
+.wrapper_f7ecac {
+  padding: 0;
+  border: none;
+  box-sizing: content-box;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0);
+}
+.wrapper_f7ecac .separator_f84418 {
+  display: none;
+}
+.wrapper_f7ecac .button_f7ecac::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+  background-color: var(--profile-primary-color, var(--hsl-primary-color));
+}
+.wrapper_f7ecac .button_f7ecac:first-of-type::before {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.wrapper_f7ecac .button_f7ecac:last-of-type::before {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.wrapper_f7ecac .button_f7ecac:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.wrapper_f7ecac .button_f7ecac:hover::before {
+  background-color: var(--profile-secondary-color, var(--hsl-hover-color));
+}
+.hasContent__908e2 {
+  border-top-color: rgba(0, 0, 0, 0);
+}
+.hasContent__908e2.isUnread__908e2 .content__908e2 {
+  font-weight: bold;
+}
+.hasContent__908e2.isUnread__908e2 .unreadPill__908e2 {
+  top: unset;
+}
+.content__908e2 {
+  text-align: center;
+  color: var(--hsl-primary-color);
+  font-weight: normal;
+  margin: 0 8px;
+  padding: 2px 10px;
+  flex: 1 1 auto;
+  background: var(--hsl-card-background);
+}
+.newMessagesBar__0f481 {
+  background: var(--hsl-primary-color);
+  box-shadow: none;
+  opacity: 0.75;
+}
+.newMessagesBar__0f481:hover {
+  opacity: 0.9;
+}
+.newMessagesBar__0f481:active {
+  padding-top: 0;
+  opacity: 1;
+}
+.repliedMessage_c19a55::before {
+  border-color: var(--hsl-primary-color);
+}
+.repliedMessage_c19a55 .replyBadge_c19a55 {
+  background: var(--hsl-card-background);
+}
+.repliedMessage_c19a55 .repliedTextPreview_c19a55 .repliedTextContent_c19a55 {
+  pointer-events: unset;
+}
+.repliedMessage_c19a55 .repliedTextPreview_c19a55 .repliedTextContent_c19a55 a,
+.repliedMessage_c19a55
+  .repliedTextPreview_c19a55
+  .repliedTextContent_c19a55
+  span {
+  pointer-events: none;
+}
