@@ -325,3 +325,42 @@ a[href^="http://"]
     )
     center/cover no-repeat;
 }
+:is(
+    #message-accessories-1369293177118265365,
+    #message-accessories-1369293195518803998,
+    #message-accessories-1369293216385470558,
+    #message-accessories-1369293235348045897,
+    #message-accessories-1369293258068328550,
+    #message-accessories-1369293283871686809
+  )
+  .footer__4d95d {
+  width: 300px;
+}
+:is(
+    #message-accessories-1369293177118265365,
+    #message-accessories-1369293195518803998,
+    #message-accessories-1369293216385470558,
+    #message-accessories-1369293235348045897,
+    #message-accessories-1369293258068328550,
+    #message-accessories-1369293283871686809
+  )
+  .downloadButton__4d95d {
+  color: var(--local-color, inherit);
+}
+:is(
+    #message-accessories-1369293177118265365,
+    #message-accessories-1369293195518803998,
+    #message-accessories-1369293216385470558,
+    #message-accessories-1369293235348045897,
+    #message-accessories-1369293258068328550,
+    #message-accessories-1369293283871686809
+  )
+  :is(
+    .toggleExpandSection__4d95d,
+    .attachmentName__4d95d,
+    .formattedSize__4d95d,
+    .codeIcon__4d95d,
+    pre
+  ) {
+  display: none;
+}
