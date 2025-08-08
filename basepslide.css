@@ -279,3 +279,34 @@ a[href^="http://"]
     #message-accessories-1369293258068328550,
     #message-accessories-1369293283871686809
   )
+  .container__4d95d {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+:is(
+    #message-accessories-1369293177118265365,
+    #message-accessories-1369293195518803998,
+    #message-accessories-1369293216385470558,
+    #message-accessories-1369293235348045897,
+    #message-accessories-1369293258068328550,
+    #message-accessories-1369293283871686809
+  )
+  .textContainer__4d95d::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--local-image) center/cover no-repeat;
+}
+:is(
+    #message-accessories-1369293177118265365,
+    #message-accessories-1369293195518803998,
+    #message-accessories-1369293216385470558,
+    #message-accessories-1369293235348045897,
+    #message-accessories-1369293258068328550,
+    #message-accessories-1369293283871686809
+  )
