@@ -4051,6 +4051,9 @@ html {
 .accountProfilePopoutWrapper__37e49 .menu_c1e9c4:not(.submenu_c1e9c4) {
   background: rgba(0, 0, 0, 0);
 }
+.accountProfilePopoutWrapper__37e49 .menu_c1e9c4:not(.submenu_c1e9c4):before {
+  content: none;
+}
 .submenuPaddingContainer_c1e9c4 {
   padding: 0;
   position: relative;
