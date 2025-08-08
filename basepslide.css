@@ -1,0 +1,26 @@
+:root {
+  --width: 240px;
+  --hide-var: 1;
+  --hide-fallback-enabled: 1;
+  --hide-speed: 0.5s;
+  --blur-intensity: 1;
+}
+
+/* Slide style for content panels */
+.slide-panel {
+  left: calc((var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)));
+  transition:
+    var(--hide-speed, 0.5s) transform ease-out,
+    var(--hide-speed, 0.5s) backdrop-filter ease-out;
+  margin-left: calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled)));
+  position: relative;
+  z-index: 2;
+  background: var(--background, #111); /* optional */
+}
+
+/* Trigger slide effect on hover */
+.slide-panel:hover,
+.slide-panel:focus-within {
+  transform: translateX(calc(-1 * (var(--width) - 60px) * var(--hide-var, var(--hide-fallback-enabled))));
+  backdrop-filter: blur(calc(var(--blur-intensity, 1) * var(--hide-var, var(--hide-fallback-enabled)) * 3px));
+}
