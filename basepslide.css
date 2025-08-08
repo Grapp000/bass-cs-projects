@@ -4615,9 +4615,6 @@ html {
   margin-right: 5px;
   background: linear-gradient(to left, currentColor -50%, transparent 50%);
 }
-.container__2637a {
-  margin-left: 0;
-}
 :is(.content__99f8c, .content_d125d2) > div[style="height: 84px;"] {
   height: 132px !important;
 }
