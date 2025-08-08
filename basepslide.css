@@ -310,3 +310,18 @@ a[href^="http://"]
     #message-accessories-1369293258068328550,
     #message-accessories-1369293283871686809
   )
+  .textContainer__4d95d::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  background: var(
+      --preview-overlay,
+      url("https://leafyluigi.github.io/images/preview-overlay.png")
+    )
+    center/cover no-repeat;
+}
