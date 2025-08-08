@@ -975,6 +975,38 @@ html {
 .container__05cdc {
   display: none;
 }
+.buttonContainer__664ff,
+.buttonContainer__664ff:hover,
+.buttonContainer__664ff:active,
+.colorable_f1ceac.white_f1ceac,
+.colorable_f1ceac.white_f1ceac:hover,
+.colorable_f1ceac.white_f1ceac.active_f1ceac {
+  background: var(--hsl-primary-color);
+}
+.colorable_f1ceac.primaryDark_f1ceac,
+.colorable_f1ceac.primaryDark_f1ceac:hover,
+.colorable_f1ceac.primaryDark_f1ceac:active {
+  background: var(--hsl-card-background);
+}
+.colorable_f1ceac.red_f1ceac,
+.colorable_f1ceac.red_f1ceac:hover,
+.colorable_f1ceac.red_f1ceac:active {
+  background: var(--hsl-red-color);
+}
+.colorable_f1ceac.green_f1ceac,
+.colorable_f1ceac.green_f1ceac:hover,
+.colorable_f1ceac.green_f1ceac:active {
+  background: var(--hsl-green-color);
+}
+.audienceIconContainer__55bab {
+  background: var(--hsl-primary-color);
+  color: var(--header-primary);
+}
+.container__722ff,
+.callContainer__722ff,
+.avatar__71eb2,
+.rowContainer__8a920,
+.participants__9c309 {
   background: rgba(0, 0, 0, 0);
 }
 :is(.chat_f75fb0, .wrapper_d852db, .wrapper_fc8177) {
@@ -5362,6 +5394,43 @@ html {
 .panels_c48ade :is(.activityPanel_c48ade .actions_bf1a22) {
   border: 1px solid var(--hsl-middle-shading);
   border-radius: 8px;
+}
+.buttons__37e49 {
+  background: rgba(0, 0, 0, 0);
+  box-sizing: content-box;
+  border-radius: 8px;
+  gap: 0;
+  border: none;
+}
+.buttons__37e49 .button__67645::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+  background-color: var(--hsl-primary-color);
+}
+.buttons__37e49 .button__67645:last-child::before {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.buttons__37e49 .button__67645:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.buttons__37e49 .button__67645:hover::before {
+  background-color: var(--hsl-hover-color);
+}
+.micButtonParent__37e49 .button__67645::before {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.buttons__37e49 .micButtonParent__37e49 .button__67645::before {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .children__29444 {
   order: 1;
