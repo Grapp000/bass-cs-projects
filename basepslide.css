@@ -975,38 +975,6 @@ html {
 .container__05cdc {
   display: none;
 }
-.buttonContainer__664ff,
-.buttonContainer__664ff:hover,
-.buttonContainer__664ff:active,
-.colorable_f1ceac.white_f1ceac,
-.colorable_f1ceac.white_f1ceac:hover,
-.colorable_f1ceac.white_f1ceac.active_f1ceac {
-  background: var(--hsl-primary-color);
-}
-.colorable_f1ceac.primaryDark_f1ceac,
-.colorable_f1ceac.primaryDark_f1ceac:hover,
-.colorable_f1ceac.primaryDark_f1ceac:active {
-  background: var(--hsl-card-background);
-}
-.colorable_f1ceac.red_f1ceac,
-.colorable_f1ceac.red_f1ceac:hover,
-.colorable_f1ceac.red_f1ceac:active {
-  background: var(--hsl-red-color);
-}
-.colorable_f1ceac.green_f1ceac,
-.colorable_f1ceac.green_f1ceac:hover,
-.colorable_f1ceac.green_f1ceac:active {
-  background: var(--hsl-green-color);
-}
-.audienceIconContainer__55bab {
-  background: var(--hsl-primary-color);
-  color: var(--header-primary);
-}
-.container__722ff,
-.callContainer__722ff,
-.avatar__71eb2,
-.rowContainer__8a920,
-.participants__9c309 {
   background: rgba(0, 0, 0, 0);
 }
 :is(.chat_f75fb0, .wrapper_d852db, .wrapper_fc8177) {
