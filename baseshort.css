@@ -1,0 +1,38 @@
+:root{
+  --hide-speed: .5s;         /* animation speed */
+  --hide-member-list: 1;     /* 1 = slide, 0 = normal */
+  --hide-active-now: 1;      /* 1 = slide, 0 = normal */
+  --blur-intensity: 1;       /* 0 = no blur on hover */
+}
+
+/* Width & toggle wiring for each panel */
+[class^="membersWrap_"]{      /* Guild member list (right column) */
+  --width: 240px;
+  --hide-var: var(--hide-member-list);
+}
+[class^="nowPlayingColumn_"]{ /* Friends/DMs "Active Now" column */
+  --width: 360px;
+  --hide-var: var(--hide-active-now);
+}
+
+/* Hidden/peeking state (shows a 60px tab) */
+[class^="chatContent_"] + [class^="membersWrap_"],
+[class^="nowPlayingColumn_"]{
+  background: var(--background, rgba(0,0,0,.35));
+  left: calc((var(--width,240px) - 60px) * var(--hide-var,1));
+  margin-left: calc(-1 * (var(--width,240px) - 60px) * var(--hide-var,1));
+  transition:
+    var(--hide-speed,.5s) transform ease-out,
+    var(--hide-speed,.5s) backdrop-filter ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover = slide out
+   Remove `.app-focused` below if you want it to slide even when Discord isn't focused. */
+.app-focused [class^="chatContent_"] + [class^="membersWrap_"]:is(:hover,:focus-within),
+.app-focused [class^="nowPlayingColumn_"]:is(:hover,:focus-within){
+  transform: translateX(calc(-1 * (var(--width,240px) - 60px) * var(--hide-var,1)));
+  -webkit-backdrop-filter: blur(calc(var(--blur-intensity,1) * var(--hide-var,1) * 3px));
+  backdrop-filter: blur(calc(var(--blur-intensity,1) * var(--hide-var,1) * 3px));
+}
