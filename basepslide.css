@@ -196,3 +196,61 @@ html,
 :is(.platform-linux, .platform-web) .scroller_ef3116 {
   padding: 4px 0 0 0;
 }
+:is(.platform-linux, .platform-web) .guilds_c48ade::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1010;
+  pointer-events: none;
+  background-color: var(--hsl-header-shading);
+  height: 48px;
+  width: 100%;
+}
+:is(.platform-linux, .platform-web) .tree_ef3116 {
+  top: 48px;
+  position: relative;
+  height: calc(100vh - 48px);
+}
+.content_f75fb0 > .container_c8ffbb,
+.chatContent_f75fb0 + .membersWrap_c8ffbb,
+.user-profile-sidebar,
+.nowPlayingColumn__133bf {
+  background: var(--background, var(--hsl-side-shading));
+  left: calc(
+    (var(--width, 240px) - 60px) * var(--hide-var, var(--hide-fallback-enabled))
+  );
+  transition: var(--hide-speed, 0.5s) transform ease-out,
+    var(--hide-speed, 0.5s) backdrop-filter ease-out;
+  margin-left: calc(
+    -1 * (var(--width, 240px) - 60px) * var(--hide-var, var(--hide-fallback-enabled))
+  );
+  position: relative;
+  z-index: 2;
+}
+.app-focused .content_f75fb0 > .container_c8ffbb:is(:hover, :focus-within),
+.app-focused
+  .chatContent_f75fb0
+  + .membersWrap_c8ffbb:is(:hover, :focus-within),
+.app-focused .user-profile-sidebar:is(:hover, :focus-within),
+.app-focused .nowPlayingColumn__133bf:is(:hover, :focus-within) {
+  transform: translateX(
+    calc(
+      -1 * (var(--width, 240px) - 60px) * var(--hide-var, var(--hide-fallback-enabled))
+    )
+  );
+  -webkit-backdrop-filter: blur(
+    calc(
+      var(--blur-intensity, 1) * var(--hide-var, var(--hide-fallback-enabled)) *
+        3px
+    )
+  );
+  backdrop-filter: blur(
+    calc(
+      var(--blur-intensity, 1) * var(--hide-var, var(--hide-fallback-enabled)) *
+        3px
+    )
+  );
+}
