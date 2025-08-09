@@ -4978,13 +4978,8 @@ html {
   --shadow-top-low: unset;
   --shadow-top-low-filter: unset;
 }
-.container__37e49,
-.container__2637a,
-.activityPanel_c48ade {
-  background: var(--hsl-card-background) !important;
-  border-radius: 12px;            /* tweak to taste */
-  box-shadow: 0 8px 24px rgba(0,0,0,.18); /* optional */
-}
-.accountProfilePopoutWrapper__37e49 .menu_c1e9c4:not(.submenu_c1e9c4) {
-  background: var(--modal-background) !important;
+.container__37e49 {
+  background: rgba(0, 0, 0, 0.35) !important; /* semi-transparent dark */
+  backdrop-filter: blur(6px) !important;      /* glass blur */
+  -webkit-backdrop-filter: blur(6px) !important;
 }
