@@ -4979,7 +4979,8 @@ html {
   --shadow-top-low-filter: unset;
 }
 .container__37e49 {
-  background: rgba(0, 0, 0, 0.35) !important; /* semi-transparent dark */
-  backdrop-filter: blur(6px) !important;      /* glass blur */
+  background: rgba(0, 0, 0, 0.35) !important;   /* semi-transparent tint */
+  backdrop-filter: blur(6px) !important;        /* frosted glass blur */
   -webkit-backdrop-filter: blur(6px) !important;
+  border-radius: 8px;                           /* optional rounding */
 }
